@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8870c269-f44e-42a8-926a-a6a883274c8e",
+		"name": "TO-DO-API ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetching Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"title\": \"print out hard copies of documents\",\r\n    \"discription\": \"For presentation\",\r\n    \"dueDate\": \"2021-11-18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/home/feed/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"home",
+						"feed",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetching Data By id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"title\": \"Room Rent payment\",\r\n    \"discription\": \"\",\r\n    \"dueDate\": \"2021-11-18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/home/feed/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"home",
+						"feed",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting data by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/home/feed/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"home",
+						"feed",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post data to database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Book Hotel\",\r\n    \"discription\": \"Book hotel near Delhi railway station\",\r\n    \"duedate\": \"2021/11/27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/home/feed/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"home",
+						"feed",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
